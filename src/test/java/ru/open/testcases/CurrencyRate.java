@@ -1,21 +1,14 @@
 package ru.open.testcases;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selectors.by;
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.*;
-import static jdk.nashorn.internal.parser.TokenType.OR;
 
 
 public class CurrencyRate {
@@ -23,7 +16,6 @@ public class CurrencyRate {
     @Test(description = "Cценарий: Сравнение курсов валют", priority = 1, timeOut = 60000 * 10)
     @Step("Step1: Открыть браузер Chrome")
     public void openWebsite(){
-        //        Configuration.startMaximized = true;
         //Открыть браузер
         Configuration.browser = "chrome";
         open("https://www.google.com");
