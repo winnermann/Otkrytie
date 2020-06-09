@@ -58,7 +58,7 @@ public class CurrencyRate {
         String dollarByStroka = $(By.xpath("//span[contains(text(),' RUB = 1 USD')]")).waitUntil(visible, 10000).getText();
         System.out.println(dollarByStroka + " dollarByStroka");
 
-        //отсечение лишних симводов при покупке доллара
+        //отсечение лишних символов при покупке доллара
         String str = dollarByStroka;
         String newStr = str.replace(" RUB = 1 USD", "");
         System.out.println(newStr + " newStr");
@@ -79,7 +79,7 @@ public class CurrencyRate {
         String dollarSellStroka = $(By.xpath("//span[contains(text(),'1 USD =')]")).waitUntil(visible, 10000).getText();
         System.out.println(dollarSellStroka + " dollarSellStroka");
 
-        //отсечение лишних симводов при продаже доллара
+        //отсечение лишних символов при продаже доллара
         String str3 = dollarSellStroka;
         String newStr3 = str3.replace(" RUB", "");
         System.out.println(newStr3 + " newStr3");
@@ -117,7 +117,7 @@ public class CurrencyRate {
         String euroByStroka = $(By.xpath("//span[contains(text(),' RUB = 1 EUR')]")).text();
         System.out.println(euroByStroka + " euroByStroka");
 
-        //отсечение лишних симводов при покупке Евро
+        //отсечение лишних символов при покупке Евро
         String str6 = euroByStroka;
         String newStr6 = str6.replace(" RUB = 1 EUR", "");
         System.out.println(newStr6 + " newStr6");
@@ -139,7 +139,7 @@ public class CurrencyRate {
         String euroSellStroka = $(By.xpath("//span[contains(text(),'1 EUR = ')]")).text();
         System.out.println(euroSellStroka + " euroSellStroka");
 
-        //отсечение лишних симводов при продаже Евро
+        //отсечение лишних символов при продаже Евро
         String str8 = euroSellStroka;
         String newStr8 = str8.replace(" RUB", "");
         System.out.println(newStr8 + " newStr8");
